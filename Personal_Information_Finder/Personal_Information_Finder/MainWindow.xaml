@@ -11,17 +11,16 @@
             <ColumnDefinition Width="62*"/>
             <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="AppName" HorizontalAlignment="Left" Margin="158.416,10,0,0" TextWrapping="Wrap" Text="개인정보탐색기 Ver 1.0" VerticalAlignment="Top" Width="128" Grid.Column="1"/>
+        <TextBlock x:Name="AppName" HorizontalAlignment="Left" Margin="158,10,0,0" TextWrapping="Wrap" Text="개인정보탐색기 Ver 1.0" VerticalAlignment="Top" Width="128" Grid.Column="1" Height="16"/>
 
-        <Button x:Name="Open" Content="Open" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="245" Height="20" Background="Black" Foreground="White" BorderBrush="Black" Click="OpenClick"/>
-        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="41.416,27,0,0" VerticalAlignment="Top" Width="245" Background="Black" BorderBrush="Black" Foreground="White" Height="20" Grid.Column="1"/>
-        <Button x:Name="Find" Content="Find" HorizontalAlignment="Left" Margin="273,27,0,0" VerticalAlignment="Top" Width="245" Background="Black" Foreground="White" BorderBrush="Black" Grid.ColumnSpan="2" Click="FindClick"/>
+        <Button x:Name="Open" Content="Open" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="250" Height="20" Background="Black" Foreground="White" BorderBrush="Black" Click="OpenClick"/>
+        <Button x:Name="Save" Content="Save" Margin="36,26,0,0" VerticalAlignment="Top" Background="Black" BorderBrush="Black" Foreground="White" Height="20" Grid.Column="1" HorizontalAlignment="Left" Width="250"/>
+        <Button x:Name="Find" Content="Find" HorizontalAlignment="Left" Margin="272,27,0,0" VerticalAlignment="Top" Width="250" Background="Black" Foreground="White" BorderBrush="Black" Grid.ColumnSpan="2" Click="FindClick" Height="20"/>
         <TextBox x:Name="TextArea" HorizontalAlignment="Left" Height="354" Margin="402,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" Background="#FF64C8FA" BorderBrush="Black" Foreground="White" Grid.ColumnSpan="2"/>
-        <ListView x:Name="ListView" HorizontalAlignment="Left" Height="354" Margin="10,55,0,0" VerticalAlignment="Top" Width="380" Background="#FF64C8FA" BorderBrush="Black" Foreground="White">
+        <ListView x:Name="ListView" HorizontalAlignment="Left" Height="354" Margin="10,55,0,0" VerticalAlignment="Top" Width="380" Background="#FF64C8FA" BorderBrush="Black" Foreground="White" MouseDoubleClick="List_select">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="이름" Width="190"/>
-                    <GridViewColumn Header="확장자" Width="190"/>
+                    <GridViewColumn Header="이름" Width="380"/>
                 </GridView>
             </ListView.View>
         </ListView>
