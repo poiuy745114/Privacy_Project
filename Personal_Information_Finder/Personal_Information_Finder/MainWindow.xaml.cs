@@ -25,7 +25,6 @@ namespace Personal_Information_Finder
     {
         string Folderselect = "";
         string[] FileEntries;
-        string[] SearchedFile;
         public MainWindow()
         {
             InitializeComponent();
@@ -49,7 +48,6 @@ namespace Personal_Information_Finder
             {
                 if (System.IO.Path.GetExtension(list) == ".txt")
                 {
-                    string view = "";
                     string values = "";
                     string fileread = File.ReadAllText(list);
                     int FindNo_Value = FindNo(fileread, ref values);
